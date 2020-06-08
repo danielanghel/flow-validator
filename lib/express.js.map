@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/express.js"],"names":["asyncExpress","express"],"mappings":";;;;;;;;;;;yBAASA,Y;;;;;;;;;oBACAC,O","file":"express.js","sourcesContent":["export { asyncExpress } from './async/asyncExpress';\nexport { express } from './sync/express';\n"]}
