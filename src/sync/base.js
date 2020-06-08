@@ -80,6 +80,6 @@ export const truthy: Type<true> = new Type("truthy", v => {
 });
 
 export const falsy: Type<false> = new Type("falsy", v => {
-  if (Boolean(v) === false) return true;
-  throw new ValidationError({ expected: truthy, got: v });
+  if (Boolean(v) === false) return false;
+  throw new ValidationError({ expected: falsy, got: v });
 });
