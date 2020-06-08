@@ -10,7 +10,6 @@
   "scripts": {
     "eslint": "eslint .",
     "flow": "flow check .",
-    "checkdeps": "nsp check",
     "test": "mocha --recursive",
     "test:file": "mocha",
     "coverage": "nyc mocha",
@@ -22,7 +21,7 @@
     "doc:lint": "documentation lint src -g",
     "doc:build": "rm -r doc/*; mv src/index.js src/index; documentation build src -g --document-exported -f html -o doc --sort-order alpha; mv src/index src/index.js",
     "doc:publish": "./scripts/doc_build.sh && git push origin gh-pages:gh-pages",
-    "precommit": "npm run prettier:precommit && npm run doc:lint && npm run eslint && npm run flow && npm run checkdeps && npm test && npm run coverage && npm run build",
+    "precommit": "npm run prettier:precommit && npm run doc:lint && npm run eslint && npm run flow && npm test && npm run coverage && npm run build",
     "prepublish": "npm run precommit",
     "postpublish": "npm run doc:publish && npm run release:notes",
     "bithound": "bithound check git@github.com:freddi301/flow-validator.git",
@@ -87,10 +86,12 @@
     "husky": "^0.13.2",
     "istanbul": "0.4.5",
     "mocha": "3.4.2",
-    "nsp": "2.6.3",
     "nyc": "11.0.2",
     "prettier": "^1.5.3",
     "release": "^1.2.3"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "engines": {
+    "yarn": "YARN NO LONGER USED - use npm instead."
+  }
 }
