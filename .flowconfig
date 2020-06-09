@@ -1,5 +1,6 @@
 [ignore]
-./lib
+<PROJECT_ROOT>/lib/.*
+<PROJECT_ROOT>/test/.*
 
 [include]
 
