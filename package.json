@@ -90,8 +90,5 @@
     "prettier": "^1.5.3",
     "release": "^1.2.3"
   },
-  "dependencies": {},
-  "engines": {
-    "yarn": "YARN NO LONGER USED - use npm instead."
-  }
+  "dependencies": {}
 }
